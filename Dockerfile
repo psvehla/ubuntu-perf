@@ -9,4 +9,5 @@ RUN apt update && apt -y upgrade && \
     tar -xf linux-6.6.9.tar.xz && \
     rm linux-6.6.9.tar.xz && \
     cd linux-6.6.9/tools/perf/ && \
-    make -C . && make install
+    make -C . && make install && \
+    cp perf /usr/local/bin/
